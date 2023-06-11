@@ -10,7 +10,7 @@ require_once 'functions.php';
 
 // print_r($config);
 
-$db = new SQLite3($config['db_folder'].'/'.$config['db_name'].'.sqlite');
+$db = new SQLite3($config['db_folder'] . '/' . $config['db_name'] . '.sqlite');
 $tags = ['cat', 'dog', 'bird', 'fish', 'horse', 'cow', 'pig', 'sheep', 'goat', 'chicken', 'duck', 'turkey', 'rabbit', 'mouse', 'rat', 'snake', 'lizard', 'turtle', 'frog', 'spider'];
 
 
@@ -30,7 +30,7 @@ $count = 0;
 while ($row = $result->fetchArray()) {
     $count++;
 }
-echo 'found '.$count.' items with the tags cat and dog<br>';
+echo 'found ' . $count . ' items with the tags cat and dog<br>';
 
 // while ($row = $result->fetchArray()) {
 //     echo '<pre>';
@@ -39,4 +39,4 @@ echo 'found '.$count.' items with the tags cat and dog<br>';
 // }
 
 // print execution time
-echo 'execution time: '. round(((microtime(true) - $time) * 1000),0).' milliseconds<br>';
+echo 'execution time: ' . round(((microtime(true) - $time) * 1000), 0) . ' milliseconds<br>';

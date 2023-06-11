@@ -1,4 +1,7 @@
 # PSPASC
+
+https://github.com/KoljaL/PWA-Svelte-PHP-Auth-Sync-Concept
+
 This is a proof-of-concept!
 
 > The idea is to have a simple, offline-first, PWA that can be used to manage a notes ans tasks.   
